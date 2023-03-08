@@ -1,0 +1,19 @@
+<html>
+<body>
+<script>
+function form_validation(){
+var x=document.forms["index"]["u_name"].value;
+if(x==""){
+alert("this is required");
+
+}
+}
+
+</script>
+<form action="" name="index" method="post" onsubmit="return form_validation()">
+name:<input type="text" name="u_name"><br>
+password:<input type="password" name="password"><br>
+
+<input type="submit" value="submit" onsubmit="form_validation()">
+</body>
+</html>

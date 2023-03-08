@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<title>jQuery Get Selected Option Value</title>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script>
+$(document).ready(function () {
+$("#SubjectsList").change(function () {
+var selectedSubject = $("#SubjectsList option:selected").text();
+alert("You have selected the country - " + selectedSubject);
+});
+});
+</script>
+<style>
+#divstyle {
+width: 500px;
+height: 250px;
+padding-top: 20px;
+padding-left: 5px;
+font-size: 24px;
+text-align: center;
+color: maroon;
+background-color: cadetblue;
+}
+</style>
+</head>
+<body>
+<div id ="divstyle">
+<h3>jQuery select value using val() method</h3>
+<label style="font-size: 20px;">Select:</label>
+<select id="SubjectsList">
+<option value="eng">English</option>
+<option value="phy">Physics</option>
+<option value="chem">Chemistry</option>
+<option value="maths">Mathematics</option>
+</select>
+</div>
+</body>
+</html>  

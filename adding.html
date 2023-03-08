@@ -1,0 +1,22 @@
+<html>
+<body>
+<h2 id="one">hello</h2>
+<div id="two"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+<script>
+					$(document).ready(function(){
+
+					$("#one").click(function(){
+						/*$("#one").css("color","green");
+								$("#one").css("background-color","gray");*/
+								$("#one").css({
+											"background-color":"gray",
+											"color":"purple",
+											"font-size":"50px"});
+							
+						});
+					});
+
+</script>
+</body>
+</html>

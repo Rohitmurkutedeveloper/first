@@ -1,0 +1,20 @@
+
+.flex,ul,li,a{
+	display:flex;
+	
+	text-decoration:none;
+	color:black;
+	font-family:sans-serif;
+margin:10px ;
+list-style-type:none;
+	transition:0.6s ease;
+
+}
+li{
+	border:1px solid black;
+	padding:4px;
+}
+.flex a:hover{
+	background-color:purple;
+	color:white;
+}

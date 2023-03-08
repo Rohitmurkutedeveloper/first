@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+<title>jQuery select values from Multiple Select Box</title>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script>
+$(document).ready(function () {
+$("button").click(function () {
+var multipleValues = $( "#subj" ).val() || [];
+$( "p" ).html(" <b>You selected:</b> " + multipleValues.join( ", " ) );
+});
+});
+</script>
+<style>
+#divstyle {
+width: 500px;
+height: 350px;
+padding-top: 20px;
+padding-left: 5px;
+font-size: 24px;
+text-align: center;
+color: maroon;
+background-color: cadetblue;
+}
+</style>
+</head>
+<body>
+<div id="divstyle">
+<h3>jQuery select values from Multiple Select Box</h3>
+<select id="subj" multiple="multiple" size="7">
+<option>English</option>
+<option>Maths</option>
+<option>Physics</option>
+<option>Chemistry</option>
+<option>History</option>
+<option>Geography</option>
+</select>
+<br />
+<button type="button">Click</button>
+<p></p>
+</div>
+</body>
+</html>

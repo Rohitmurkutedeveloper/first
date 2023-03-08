@@ -1,0 +1,25 @@
+<html>
+<style>
+#one{
+width:100px;
+height:200px;
+background-color:green;
+}
+</style>
+<body>
+<div id="one"></div><br><br>
+<button id="btn1">up</button>
+<button id="btn1">down</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+<script>
+						$(document).ready(function(){
+							$("#btn1").click(function(){
+								$("#one").slideToggle();
+						
+						});
+						 });
+						 
+
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+<script>
+		function form_validation(){
+			document.forms["index"].["username"].value;
+alert("fill this");
+}
+
+</script>
+<body>
+<center>
+				<form action="table2.html" method="post" name="index">
+<fieldset>
+<legend>personel info</legend>
+				<label for="username"> username:<input type="text" name="username" value="" placeholder="username" ></label><br>
+			<label for="password">password:<input type="password" name="password"placeholder="password" ></label><br>
+			<label for="email">email:<input type="email" placeholder="email"name="email" required></label><br>
+				<label for="contact">contact-no:<input type="text" placeholder="contact_no" name="contact" ></label><br>
+<h2>select cources</h2>
+			<input type="checkbox" name="course" value="checkbox1" >
+			<label for="checkbox">full-stack</label><br>
+			<input type="checkbox" name="course" value="checkbox2" >
+			<label for="checkbox">python</label><br>
+			<input type="checkbox" name="course" value="checkbox3" >
+							<label for="checkbox">php</label><br>
+
+<label for="gender">gender:</label>
+
+		<input type="radio" name="gender" value="male" >
+			<label for="male">male</label>
+			<input type="radio" name="gender" value="female" >
+			<label for="female">female</label><br>
+
+			<input type="file" name="file" ><br><br>
+<label> age</label>
+		<input type="number" name="number" ><br>
+<label>time</label>
+			<input type="time" name="time" ><br>
+<label>state</label>
+<select name="state" >
+<option >select your state:</option>
+<option value="a1">maharashtra</option>
+<option value="a2">madhyapradesh</option>
+<optgroup label="north">
+<option value="a3">mizoram</option>
+<option value="a4">manipur</option>
+<option value="a5">nagaland</option></optgroup>
+<option>goa</option>
+</select>
+<br><br>
+	<input list="list" name="list" value="">
+	<datalist id="list"value="datalist1" >
+
+	<option value="pune">pune</option>
+	<option value="mumbai">mumbai</option>
+
+	<option value="kolhapur">kolhapur</option>
+		<option value="satara">satara</option>
+		<option value="sangli">sangli</option>
+		<option value="nashik">nashik</option>
+</datalist>
+<br>
+<input type="submit" value="submit" onsubmit= "form_validation()"><input type="reset"></fieldset>
+</form>
+<center>
+</body>
+</html>

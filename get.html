@@ -1,0 +1,26 @@
+<html>
+<body>
+<input type="text" id="txt1"><br><br>
+<button id="btn">click</button>
+<p id="p1"></p>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+<script>
+
+
+$("#btn").click(function(){
+//alert("ok");$("#p1").text("hello");// for value set.
+//$("#p1").value("#");
+
+ $("#p1").text(""+$("#txt1").val());
+
+
+
+});
+
+
+</script>
+
+</body>
+
+</html>

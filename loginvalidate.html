@@ -1,0 +1,45 @@
+<html>
+<center>
+<style>
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+</style>
+<body>
+<form action="" method="post" name="login">
+<input type="text" name="u_name" id="u_name" placeholder="username"><br><br>
+<input type="password" name="pass" id="pass" placeholder="password"><br><br>
+<input type="number" name="phone" id="phone" placeholder="phone no."><br><br>
+<input type="submit" value="submit" onclick="validateForm()">
+</form>
+
+
+</body>
+</center>
+<script>
+
+	// var msg;
+	 function validateForm() {
+  let x = document.forms["login"]["u_name"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  
+  //let y = document.forms["login"]["pass"].value;
+  let y=document.getElementById("pass").value;
+  if(y.length<8)  {
+  alert("password too short");
+  return false;
+  }
+  let z=document.forms["login"]["phone"].value;
+  if(z.length!=10){
+  alert("phone no. not in 10 digits");
+  return false;
+  }
+  
+}
+ 
+</script>
+</html>
